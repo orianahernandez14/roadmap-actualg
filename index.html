@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hoja de ruta de la implementación Actual G en Kommo">
+<title>Actual G · Roadmap de implementación</title>
+<style>
+:root{color-scheme:dark;--ink:#f4f7fb;--muted:#a9bbcc;--line:#354453;--paper:#091725;--surface:#152532;--accent:#ff8b3d;--selected:#3d302f;--blue:#85c6f5}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#10385e 0,transparent 650px),var(--paper);color:var(--ink);font:16px/1.6 "Instrument Sans","Segoe UI",sans-serif}main,header,footer{max-width:1200px;margin:auto;padding-inline:clamp(18px,5vw,64px)}header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px}.brand{font-weight:800;letter-spacing:.15em}.brand b{color:var(--accent)}.toplink{color:var(--muted);font-weight:650;text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:99px}.toplink:hover{color:var(--ink)}.hero{background:linear-gradient(120deg,#102f4e,#122332);color:#fff;border-radius:24px;padding:clamp(25px,5vw,58px);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:380px;height:380px;right:-140px;top:-175px;border:1px solid #4582b2;border-radius:50%;box-shadow:0 0 0 32px #ffffff0c,0 0 0 64px #ffffff0a;pointer-events:none}.hero p{max-width:660px;color:#cfdeeb;margin:12px 0 22px}.hero small{color:var(--accent)}h1,h2,h3,p{margin-top:0}h1{font:800 clamp(2.25rem,6vw,4.4rem)/1.04 "Instrument Sans","Segoe UI",sans-serif;letter-spacing:-.045em;margin:10px 0 0}h2{font:750 clamp(1.5rem,3.5vw,2.1rem)/1.2 "Instrument Sans","Segoe UI",sans-serif;margin-bottom:12px}h3{font-size:1rem;margin-bottom:8px}.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.facts li{border:1px solid #526b81;border-radius:99px;padding:4px 12px;font-size:.85rem}.map{margin-top:32px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.steps a{display:grid;place-items:center;text-align:center;font-weight:750;min-width:0;border:1px solid var(--line);border-radius:15px;background:var(--surface);text-decoration:none;color:var(--ink);padding:14px;overflow-wrap:anywhere}.steps span,.eyebrow{font-size:.78rem;text-transform:uppercase;font-weight:750;letter-spacing:.08em}.steps em{font-style:normal;font-size:.8rem;color:var(--muted)}.steps a[aria-current]{background:var(--selected);border-color:#ec7135;color:#fff;box-shadow:0 0 16px #ff78252b}.steps a:hover{border-color:var(--blue)}:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.stage{margin:16px 0;padding:clamp(18px,4vw,34px);background:var(--surface);border:1px solid var(--line);border-radius:18px;scroll-margin-top:12px}.eyebrow{color:var(--accent);margin-bottom:6px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{border-radius:14px;background:var(--paper);padding:17px}.box p:last-child,.box ul:last-child{margin-bottom:0}.box ul,details ul{padding-left:20px}.result{border-left:3px solid var(--accent);padding-left:13px;margin:18px 0 0}.flow{display:flex;align-items:center;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:16px 0 22px}.flow li{background:#213a50;padding:7px 11px;border-radius:8px}.flow li+li:before{content:"→ ";color:var(--blue)}.agenda{list-style:none;padding:0}.agenda li{display:grid;grid-template-columns:70px 1fr;gap:8px;border-bottom:1px solid var(--line);padding:7px 0}.agenda b{white-space:nowrap;color:var(--blue)}.resources{margin:28px 0}details{border-top:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:750}details p,details ul{margin:8px 0}.stage[hidden]{display:none}.stage details{margin-top:18px}.resources li+li,.box li+li{margin-top:6px}footer{padding-block:10px 25px;color:var(--muted);font-size:.9rem}
+@media(max-width:670px){.steps{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.hero:after{opacity:.45}}@media print{:root{color-scheme:light;--ink:#172432;--muted:#445263;--line:#c4ced9;--paper:#f6f8fa;--surface:white;--blue:#254d70;--accent:#a94813}body{background:white}.flow li{background:#e9eff5}.stage[hidden]{display:block}.steps,.toplink{display:none}.hero{background:white;color:black;padding:0}.hero p,.hero small{color:black}.hero:after{display:none}.stage{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header><span class="brand">ALIEN <b>IMPLEMENTACIÓN</b></span><a class="toplink" href="#preparacion">Preparación</a></header>
+<main>
+<section class="hero" aria-labelledby="titulo">
+<small>ACTUAL G · KOMMO AVANZADO</small>
+<h1 id="titulo">Roadmap de implementación</h1>
+<p>Implementación básica de Kommo para ordenar la atención de e-commerce por WhatsApp, identificar el interés de cada contacto y seguir el recorrido de las campañas hasta la venta.</p>
+<ul class="facts"><li>4 sesiones de 90 min</li><li>1 sesión realizada</li><li>2 Salesbots configurados</li></ul>
+</section>
+<section class="map" aria-labelledby="mapa">
+<h2 id="mapa">Mapa de trabajo</h2>
+<nav class="steps" aria-label="Sesiones de implementación">
+<a href="#semana-1">Semana 1</a><a href="#semana-2">Semana 2</a><a href="#semana-3">Semana 3</a><a href="#semana-4">Semana 4</a>
+</nav>
+<article class="stage" id="semana-1">
+<p class="eyebrow">SESIÓN 1 · REALIZADA · 9 DE NOVIEMBRE</p>
+<h2>Diagnóstico y flujo comercial</h2>
+<p>Mapeamos la atención de e-commerce desde la pauta hasta WhatsApp. Actual G priorizó el perfilado inicial y la trazabilidad de campañas. Las asesoras acordaron tomar los leads según su disponibilidad y usar vistas por responsable para ordenar su trabajo.</p>
+<ol class="flow" aria-label="Flujo comercial de Actual G"><li>Consulta de campaña</li><li>Categoría de interés</li><li>Detalle de búsqueda</li><li>Atención comercial</li><li>Resultado en el embudo</li></ol>
+<div class="grid">
+<section class="box"><h3>Acuerdos de la sesión</h3><ul><li>Priorizar e-commerce, en particular recámaras, salas y comedores. Business &amp; Projects quedó fuera de la prioridad inicial.</li><li>Mantener visibles las consultas nuevas y organizar los leads tomados por responsable. Revisar el paso a Perdidos para los descartes confirmados.</li><li>Seguir fuente, campaña, marca y categoría, además de los avances y cierres.</li></ul></section>
+<section class="box"><h3>Automatizaciones ya configuradas</h3><ul><li><strong>Bot analiza lead.</strong> Evalúa una condición de origen, muestra un menú de 11 categorías y registra la categoría seleccionada en el lead.</li><li><strong>Bot que indaga interés.</strong> Usa la categoría para preguntar si busca un producto concreto o quiere explorar opciones. Si responde, avisa que alguien del equipo continuará por el chat.</li></ul></section>
+</div>
+<details><summary>Qué revisar en los bots configurados</summary><ul><li>El primero busca números por coincidencia parcial. Probar especialmente <strong>1, 10 y 11</strong>, mensajes escritos con palabras y respuestas con varias opciones.</li><li>El segundo espera <strong>3 horas</strong> antes de reenviar una pregunta y espera <strong>1 hora más</strong> antes de mover el lead a Perdidos. Revisar si el plazo comercial es suficiente y cómo recuperar una respuesta tardía.</li><li>Al pasar a atención, el segundo bot alterna automáticamente entre dos responsables. Confirmar en la próxima sesión si se ajusta para que cada asesora tome sus leads, tal como se acordó en el diagnóstico.</li></ul></details>
+<p class="result"><strong>Punto de partida.</strong> Una sesión realizada y dos bots configurados. Próximo paso: validar el circuito completo en Kommo y resolver el criterio de asignación.</p>
+</article>
+<article class="stage" id="semana-2">
+<p class="eyebrow">SESIÓN 2 · PLANIFICADA · 90 MIN</p>
+<h2>Validar bots y ordenar la bandeja</h2>
+<div class="grid">
+<section class="box"><h3>Antes de la sesión</h3><ul><li>Actual G comparte conversaciones anonimizadas de pauta, entrada directa, respuesta tardía y cliente que ya eligió un producto. Tener listos los usuarios y vistas de Karen y Keila.</li><li>Implementación prepara casos por categoría, revisión de disparadores, traspaso entre bots y reglas de asignación y descarte.</li></ul></section>
+<section class="box"><h3>Agenda</h3><ol class="agenda"><li><b>20 min</b> Confirmar etapas, responsables y criterios de descarte.</li><li><b>40 min</b> Probar el origen, las 11 categorías, texto libre y el paso al segundo bot.</li><li><b>20 min</b> Ajustar la toma de leads, revisar el recordatorio y probar una respuesta posterior.</li><li><b>10 min</b> Registrar casos aprobados y pendientes.</li></ol></section>
+</div>
+<p class="result"><strong>Salida esperada.</strong> Perfilado probado con casos representativos, reglas de toma confirmadas y diferencia clara entre un lead sin respuesta y uno descartado por el equipo.</p>
+</article>
+<article class="stage" id="semana-3">
+<p class="eyebrow">SESIÓN 3 · PLANIFICADA · 90 MIN</p>
+<h2>Trazabilidad y respuestas comerciales</h2>
+<div class="grid">
+<section class="box"><h3>Antes de la sesión</h3><ul><li>El equipo de pauta comparte el listado de campañas prioritarias de Meta y Google, su destino y ejemplos de leads. Incluir Buen Fin si hay datos disponibles.</li><li>Ventas prepara los carruseles vigentes de recámaras, salas y comedores, con precios o promociones autorizados y respuestas frecuentes por WhatsApp.</li></ul></section>
+<section class="box"><h3>Agenda</h3><ol class="agenda"><li><b>30 min</b> Revisar qué dato de origen efectivamente recibe Kommo en cada recorrido, incluidos los anuncios a WhatsApp y los recorridos con enlace etiquetado.</li><li><b>25 min</b> Acordar campos y convenciones de fuente, campaña, marca y categoría. Registrar los casos sin origen identificable.</li><li><b>25 min</b> Definir cuándo compartir carruseles y precios, y qué consultas debe resolver la asesora.</li><li><b>10 min</b> Elegir ejemplos para revisar en el embudo durante la sesión final.</li></ol></section>
+</div>
+<p class="result"><strong>Salida esperada.</strong> Mapeo de los orígenes comprobados y materiales comerciales preparados para usar según la categoría.</p>
+</article>
+<article class="stage" id="semana-4">
+<p class="eyebrow">SESIÓN 4 · PLANIFICADA · 90 MIN</p>
+<h2>Medición inicial y entrega</h2>
+<div class="grid">
+<section class="box"><h3>Antes de la sesión</h3><ul><li>Actual G selecciona casos con respuesta, venta, seguimiento pendiente y descarte. Confirmar quién mantiene los materiales, las vistas y la nomenclatura de campañas.</li><li>Implementación reúne los resultados de las pruebas y una muestra para revisar qué puede medirse con los datos disponibles.</li></ul></section>
+<section class="box"><h3>Agenda</h3><ol class="agenda"><li><b>30 min</b> Revisar entradas, respuestas, conversaciones atendidas y cierres por fuente o campaña.</li><li><b>25 min</b> Ajustar mensajes, filtros y reglas con los hallazgos de la prueba.</li><li><b>25 min</b> Mostrar cómo mantener los materiales, tomar leads, actualizar etapas y revisar el origen.</li><li><b>10 min</b> Acordar pendientes y valorar si hace falta un reporte en Google Sheets o revisar el envío de señales a Meta como trabajo posterior.</li></ol></section>
+</div>
+<p class="result"><strong>Salida esperada.</strong> Flujo de atención documentado, responsables definidos y una primera lectura del embudo con los datos disponibles.</p>
+</article>
+</section>
+<section class="resources" id="preparacion" aria-labelledby="preparar">
+<h2 id="preparar">Preparación y pruebas</h2>
+<details open><summary>Qué traer a la próxima sesión</summary><p>Ejemplos anonimizados de chats, listado de usuarios y responsables, criterio de toma manual y ejemplos de cuándo una conversación debe quedar pendiente, pasar a seguimiento o marcarse como perdida.</p></details>
+<details><summary>Cómo sabremos si el flujo funciona</summary><ul><li>La respuesta registra la categoría correcta. Una respuesta ambigua permite aclarar la búsqueda o retomar el chat desde el equipo.</li><li>La asesora encuentra la categoría y el contexto del contacto en Kommo, y el lead queda en la vista y etapa acordadas.</li><li>El recordatorio se envía según la espera aprobada. El equipo puede recuperar un contacto que retoma la conversación.</li><li>Se puede rastrear al menos un caso desde su fuente verificable hasta la última etapa alcanzada.</li></ul></details>
+<details><summary>Alcance de la medición</summary><p>Primero se comprueba qué datos de origen y avance quedan en Kommo. Un tablero en Google Sheets y el envío de eventos a Meta son opciones para evaluar según los datos, las licencias y el alcance acordado.</p></details>
+</section>
+</main>
+<footer>Actual G · Implementación básica de Kommo · Alien</footer>
+<script>
+const steps = [...document.querySelectorAll('.steps a')];
+const stages = [...document.querySelectorAll('.stage')];
+
+function selectStage() {
+  const current = steps.find(step => step.hash === location.hash)
+    ?? steps.find(step => step.hasAttribute('aria-current'))
+    ?? steps[0];
+  for (const step of steps) {
+    if (step === current) step.setAttribute('aria-current', 'step');
+    else step.removeAttribute('aria-current');
+  }
+  for (const stage of stages) stage.hidden = '#' + stage.id !== current.hash;
+}
+
+window.addEventListener('hashchange', selectStage);
+selectStage();
+</script>
+</body>
+</html>
